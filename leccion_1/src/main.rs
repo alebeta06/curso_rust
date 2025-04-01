@@ -11,4 +11,8 @@ fn main() {
 
     const PI: f64 = 3.1416;
     println!("x: {}, y: {}, PI: {}", x, y, PI);
+
+    // Ejercicio 3: Tipos de Datos y Tuplas
+    let datos: (i32, f64, char) = (42, 3.14, 'R');
+    println!("Entero: {}, Flotante: {}, Carácter: {}", datos.0, datos.1, datos.2);
 }
