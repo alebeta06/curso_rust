@@ -20,4 +20,20 @@ fn main() {
     let numero: i32 = 25;
     let numero_flotante: f64 = numero as f64;
     println!("Número entero: {}, Número flotante: {}", numero, numero_flotante);
+
+    // Ejercicio 5: Condicionales
+    let operador = '+';
+    let num1 = 10.0;
+    let num2 = 5.0;
+    let resultado = match operador {
+        '+' => num1 + num2,
+        '-' => num1 - num2,
+        '*' => num1 * num2,
+        '/' => num1 / num2,
+        _ => {
+            println!("Operador no válido");
+            return;
+        }
+    };
+    println!("Resultado: {}", resultado);
 }
