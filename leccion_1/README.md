@@ -85,3 +85,64 @@ Rust no realiza conversiones implícitas entre tipos numéricos para evitar erro
 let numero: i32 = 25;
 let numero_flotante: f64 = numero as f64;
 ```
+---
+
+## Ejercicio 5: Condicionales 🧮
+
+**Objetivo:** Practicar el uso de operadores y estructuras de control if-else.
+
+### 📌 Instrucciones:
+
+Escribe un programa que acepte un operador matemático (+, -, * o /) y dos números.
+El programa debe calcular el resultado basado en dicho operador.
+
+### ✅ Explicación:
+
+Usamos match para evaluar el operador y ejecutar la operación matemática correspondiente:
+
+```
+rust
+Copiar
+Editar
+let operador = '+';
+let num1 = 10.0;
+let num2 = 5.0;
+let resultado = match operador {
+    '+' => num1 + num2,
+    '-' => num1 - num2,
+    '*' => num1 * num2,
+    '/' => num1 / num2,
+    _ => {
+        println!("Operador no válido");
+        return;
+    }
+};
+```
+Si el operador no es válido, se imprime un mensaje de error y se detiene la ejecución.
+
+---
+# 🚀 Salida esperada en consola:
+
+Al ejecutar `cargo run` obtenemos la siguiente salida:
+
+```
+   Compiling leccion_1 v0.1.0 (/home/alebeta/curso_rust/leccion_1)
+warning: value assigned to `y` is never read
+ --> src/main.rs:9:13
+  |
+9 |     let mut y = 5;
+  |             ^
+  |
+  = help: maybe it is overwritten before being read?
+  = note: `#[warn(unused_assignments)]` on by default
+
+warning: `leccion_1` (bin "leccion_1") generated 1 warning
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.67s
+     Running `target/debug/leccion_1`
+Hello, Rust!
+x: 10, y: 15, PI: 3.1416
+Entero: 42, Flotante: 3.14, Carácter: R
+Número entero: 25, Número flotante: 25
+Resultado: 15
+
+```
