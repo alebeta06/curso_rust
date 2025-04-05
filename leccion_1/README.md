@@ -10,7 +10,7 @@ Este repositorio contiene cinco ejercicios básicos en Rust para aprender los co
 
 ### 📌 Instrucciones:
 
-1. Crea un nuevo proyecto en Rust usando `cargo`.
+1. Crea un nuevo proyecto en Rust usando `cargo new leccion_1`
 2. Modifica el archivo `main.rs` para imprimir `"Hola, Rust!"`.
 3. Compila y ejecuta el programa.
 
