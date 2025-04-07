@@ -66,3 +66,53 @@ En `src/main.rs`, cada ejercicio se ejecuta en orden dentro de la función `main
 cargo run
 ```
 
+## Salida esperada: 
+
+```
+alebeta@LAPTOP-BS7T21SP:~/curso_rust/leccion_2$ cargo run
+   Compiling leccion_2 v0.1.0 (/home/alebeta/curso_rust/leccion_2)
+warning: variants `Rojo` and `Amarillo` are never constructed
+  --> src/main.rs:47:5
+   |
+46 | enum Color {
+   |      ----- variants in this enum
+47 |     Rojo,
+   |     ^^^^
+48 |     Verde,
+49 |     Amarillo,
+   |     ^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: `leccion_2` (bin "leccion_2") generated 1 warning
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 5.53s
+     Running `target/debug/leccion_2`
+--- EJERCICIO 1 ---
+Miércoles
+
+--- EJERCICIO 2 ---
+Tabla de multiplicar del 5:
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+
+--- EJERCICIO 3 ---
+El número 8 es par
+
+--- EJERCICIO 4 ---
+Nombre: Alejandro
+Edad: 37
+Color favorito: Verde
+
+--- EJERCICIO 5 ---
+'hola' en mayúsculas es 'HOLA'
+```
+
+
