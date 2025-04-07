@@ -1,6 +1,6 @@
 # Lección 2 - Ejercicios de Rust 🦀
 
-Este proyecto contiene los ejercicios resueltos de la Lección 2 del curso de Rust. Cada ejercicio está implementado en `src/main.rs` y se puede ejecutar todo junto usando `cargo run`.
+Este proyecto contiene los ejercicios resueltos de la Lección 2 del curso de Rust. Cada ejercicio está implementado en `leccion_2/src/main.rs` y se puede ejecutar todo junto usando `cargo run`.
 
 ## Ejercicios y soluciones
 
@@ -60,7 +60,7 @@ En `src/main.rs`, cada ejercicio se ejecuta en orden dentro de la función `main
 
 ## Cómo ejecutar el proyecto 🚀
 1. Abre una terminal.  
-2. Asegúrate de estar dentro de la carpeta del proyecto.  
+2. Asegúrate de estar dentro de la carpeta del proyecto. `leccion_2`
 3. Ejecuta:  
 ```bash
 cargo run
