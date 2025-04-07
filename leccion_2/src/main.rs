@@ -70,6 +70,14 @@ fn imprimir_persona(persona: &Persona) {
     }
 }
 
+// -------------------------
+// EJERCICIO 5
+// Función que convierte una palabra a mayúsculas
+// -------------------------
+fn uppercase(palabra: &str) -> String {
+    palabra.to_uppercase()
+}
+
 // FUNCIÓN PRINCIPAL
 fn main() {
     // -------------------------
@@ -96,4 +104,9 @@ fn main() {
         color_favorito: Color::Verde,
     };
     imprimir_persona(&persona);
+
+    // Ejecutamos Ejercicio 5
+    println!("\n--- EJERCICIO 5 ---");
+    let palabra = "hola";
+    println!("'{}' en mayúsculas es '{}'", palabra, uppercase(palabra));
 }
