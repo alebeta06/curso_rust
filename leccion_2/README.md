@@ -114,5 +114,17 @@ Color favorito: Verde
 --- EJERCICIO 5 ---
 'hola' en mayúsculas es 'HOLA'
 ```
+## Resumen de aprendizaje
+
+En esta lección aprendimos a:
+
+- Trabajar con `match` en Rust.
+- Utilizar bucles `for`.
+- Crear y manejar estructuras (`struct`) y enumerados (`enum`).
+- Trabajar con funciones que retornan valores.
+- Manipular y transformar *strings* en Rust.
+- Gestionar pequeños programas de consola.
+
+¡Seguimos avanzando! 🦀🚀
 
 
