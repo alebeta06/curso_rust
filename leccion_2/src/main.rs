@@ -1,6 +1,5 @@
 use std::io; // Para leer entrada del usuario
 
-// -------------------------
 // EJERCICIO 1
 // Programa que acepta un número del 1 al 7 y muestra el día de la semana
 // -------------------------
@@ -17,6 +16,9 @@ fn mostrar_dia(numero: u8) {
     }
 }
 
+// EJERCICIO 2
+// Tabla de multiplicar de un número
+// -------------------------
 // Función que recibe un número y muestra su tabla de multiplicar
 fn tabla_multiplicar(numero: u32) {
     println!("Tabla de multiplicar del {}:", numero);
@@ -27,9 +29,18 @@ fn tabla_multiplicar(numero: u32) {
     }
 }
 
-// -------------------------
+// EJERCICIO 3
+// Función que determina si un número es par o impar
+fn par_o_impar(numero: i32) -> &'static str {
+    // Si el resto de dividir el número entre 2 es 0 => par
+    if numero % 2 == 0 {
+        "par"
+    } else {
+        "impar"
+    }
+}
+
 // FUNCIÓN PRINCIPAL
-// -------------------------
 fn main() {
     // -------------------------
     // Ejecutamos Ejercicio 1
@@ -40,4 +51,10 @@ fn main() {
     // Ejecutamos Ejercicio 2
     println!("\n--- EJERCICIO 2 ---");
     tabla_multiplicar(5); // Puedes cambiar el número
+
+    // -------------------------
+    // Ejecutamos Ejercicio 3
+    println!("\n--- EJERCICIO 3 ---");
+    let numero = 8;
+    println!("El número {} es {}", numero, par_o_impar(numero));
 }
