@@ -75,6 +75,8 @@ fn imprimir_persona(persona: &Persona) {
 // Función que convierte una palabra a mayúsculas
 // -------------------------
 fn uppercase(palabra: &str) -> String {
+    // Usamos el método to_uppercase() de la clase String
+    // para convertir la palabra a mayúsculas
     palabra.to_uppercase()
 }
 
