@@ -1,5 +1,3 @@
-use std::io; // Para leer entrada del usuario
-
 // EJERCICIO 1
 // Programa que acepta un número del 1 al 7 y muestra el día de la semana
 // -------------------------
