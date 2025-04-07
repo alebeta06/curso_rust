@@ -40,6 +40,36 @@ fn par_o_impar(numero: i32) -> &'static str {
     }
 }
 
+// EJERCICIO 4
+// Estructura Persona con Enum Color
+// -------------------------
+
+// Definimos un enum con colores posibles
+enum Color {
+    Rojo,
+    Verde,
+    Amarillo,
+}
+
+// Estructura que almacena datos de una persona
+struct Persona {
+    nombre: String,
+    edad: u32,
+    color_favorito: Color,
+}
+
+fn imprimir_persona(persona: &Persona) {
+    println!("Nombre: {}", persona.nombre);
+    println!("Edad: {}", persona.edad);
+
+    // Para imprimir el enum, usamos match
+    match persona.color_favorito {
+        Color::Rojo => println!("Color favorito: Rojo"),
+        Color::Verde => println!("Color favorito: Verde"),
+        Color::Amarillo => println!("Color favorito: Amarillo"),
+    }
+}
+
 // FUNCIÓN PRINCIPAL
 fn main() {
     // -------------------------
@@ -57,4 +87,13 @@ fn main() {
     println!("\n--- EJERCICIO 3 ---");
     let numero = 8;
     println!("El número {} es {}", numero, par_o_impar(numero));
+
+    // Ejecutamos Ejercicio 4
+    println!("\n--- EJERCICIO 4 ---");
+    let persona = Persona {
+        nombre: String::from("Alejandro"),
+        edad: 37,
+        color_favorito: Color::Verde,
+    };
+    imprimir_persona(&persona);
 }
