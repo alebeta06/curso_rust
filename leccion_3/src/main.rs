@@ -1,13 +1,13 @@
 fn main() {
     let palabra: String = String::from("Hola");
-    let palabra2: String = String::from("Mundo");
-
-    child(&palabra2);
+    
+    let palabra2: &String = &palabra;
+    let palabra3: &String = &palabra;
+    let palabra4: &String = &palabra;
 
     println!("{}", palabra);
     println!("{}", palabra2);
+    println!("{}", palabra3);
+    println!("{}", palabra4);
 }
 
-fn child(p: &String) {
-    println!("{}", p);
-}
