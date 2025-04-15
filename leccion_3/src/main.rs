@@ -1,18 +1,14 @@
+use std::rc::Rc;
+
 fn main() {
-    let palabra: String = String::from("Hola");
-    
-    let palabra2: &String = &palabra;
-    let palabra3: &String = &palabra;
-    let palabra4: &String = &palabra;
+    let palabra: Rc<String> = Rc::new(String::from("Hola"));
+
+    let palabra2: Rc<String> = Rc::clone(&palabra);
+    let palabra3: Rc<String> = Rc::clone(&palabra);
 
     println!("{}", palabra);
     println!("{}", palabra2);
     println!("{}", palabra3);
-    println!("{}", palabra4);
+    println!("Contador de referencias: {}", Rc::strong_count(&palabra));
 
-    child(&palabra);
-}
-
-fn child(p: &String) {
-    println!("{}", p);
 }
