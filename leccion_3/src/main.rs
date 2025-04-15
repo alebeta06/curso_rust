@@ -9,5 +9,10 @@ fn main() {
     println!("{}", palabra2);
     println!("{}", palabra3);
     println!("{}", palabra4);
+
+    child(&palabra);
 }
 
+fn child(p: &String) {
+    println!("{}", p);
+}
