@@ -1,14 +1,10 @@
-use std::rc::Rc;
+const X: i32 = 10;
 
 fn main() {
-    let palabra: Rc<String> = Rc::new(String::from("Hola"));
+    println!("{}", X);
+    child();
+}
 
-    let palabra2: Rc<String> = Rc::clone(&palabra);
-    let palabra3: Rc<String> = Rc::clone(&palabra);
-
-    println!("{}", palabra);
-    println!("{}", palabra2);
-    println!("{}", palabra3);
-    println!("Contador de referencias: {}", Rc::strong_count(&palabra));
-
+fn child() {
+    println!("{}", X);
 }
