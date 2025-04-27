@@ -1,3 +1,6 @@
+![Captura de pantalla 2025-04-27 151338](https://github.com/user-attachments/assets/482779d1-362d-4d3f-b178-f887ba7b371c)
+
+
 # Ejercicios de Rust 🦀
 
 Este repositorio contiene cinco ejercicios básicos en Rust para aprender los conceptos fundamentales del lenguaje.
