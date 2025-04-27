@@ -64,3 +64,16 @@ fn mas_largo<'a>(x: &'a str, y: &'a str) -> &'a str {
         y
     }
 }
+
+//Salida por consola
+
+//Expecto Patronum
+//Bienvenido a la biblioteca mágica
+//Libro de los Elementos, Libro de los Elementos
+//Libro de los Elementos - Versión Mejorada
+//La runa usada es: 7
+//La runa sigue con Archibaldo: 7
+//Se ha entregado el libro: Libro de Alquimia
+//Se ha entregado el libro: Grimorio Oscuro
+//Archibaldo aún tiene el grimorio: Grimorio Oscuro
+//El libro más largo es: Fuego y Hielo
