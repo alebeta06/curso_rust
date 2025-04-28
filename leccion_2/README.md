@@ -1,3 +1,6 @@
+![Captura de pantalla 2025-04-06 202427](https://github.com/user-attachments/assets/faacd7f7-428d-47c7-9f13-7b1985832a44)
+
+
 # Lección 2 - Ejercicios de Rust 🦀
 
 Este proyecto contiene los ejercicios resueltos de la Lección 2 del curso de Rust. Cada ejercicio está implementado en `leccion_2/src/main.rs` y se puede ejecutar todo junto usando `cargo run`.

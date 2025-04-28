@@ -1,3 +1,6 @@
+![L1](https://github.com/user-attachments/assets/e2b250b8-bf36-43d7-8797-f057eb055e86)
+
+
 # Ejercicios de Rust 🦀
 
 Este repositorio contiene cinco ejercicios básicos en Rust para aprender los conceptos fundamentales del lenguaje.

@@ -1,3 +1,6 @@
+![Captura de pantalla 2025-04-15 024149](https://github.com/user-attachments/assets/7a4cf559-e145-4bf8-8dea-0f98f991712c)
+
+
 # Lección 3 - El mago Archibaldo y la Biblioteca Encantada 🧙‍♂📚
 
 ## 🧪 Descripción del problema:
