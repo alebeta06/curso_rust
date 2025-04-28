@@ -12,8 +12,16 @@ fn main() {
     }
     
     if valor.is_none() {
-        println!("El valor es: {}", valor.unwrap());
+        println!("El valor es: {}", valor.unwrap_or(0));
     }
+
+    let numero: Option<i8> = Some(10);
+
+    let doble: Option<i8> = numero.map(|n | n * 2);
+    println!("El doble es: {}", doble.unwrap_or(0));
+
+    let resultado: Option<i8> = numero.and_then(dividir_entre_dos);
+    println!("El resultado es: {}", resultado.unwrap_or(0));
 }
 
 fn divide(dividendo: f64, divisor: f64) -> Option<f64> {
@@ -21,5 +29,13 @@ fn divide(dividendo: f64, divisor: f64) -> Option<f64> {
         None
     } else {
         Some(dividendo / divisor)
+    }
+}
+
+fn dividir_entre_dos(numero: i8) -> Option<i8> {
+    if numero % 2 == 0 {
+        Some(numero / 2)
+    } else {
+        None
     }
 }
