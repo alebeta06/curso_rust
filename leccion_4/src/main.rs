@@ -1,3 +1,5 @@
+use std::fs;
+
 fn main() {
     let resultado: Option<f64> = divide(10.0, 0.0);
     match resultado {
@@ -40,6 +42,26 @@ fn main() {
         println!("hubo un Error: {}", resultado.unwrap_err());
     }
 
+    match dividir(10.0, 2.0) {
+        Ok(resultado) => println!("El resultado es: {}", resultado),
+        Err(error) => println!("huo un error: {}", error),
+    }
+
+    let contenido = fs::read_to_string("datos.txt");
+    
+    match contenido {
+        Ok(contenido) => println!("El contenido del archivo es: {}", contenido),
+        Err(error) => println!("hubo un Error: {}", error),
+    }
+
+}
+
+fn dividir(dividendo: f64, divisor: f64) -> Result<f64, String> {
+    if divisor == 0.0 {
+        Err(String::from("no se puede Dividir por cero"))
+    } else {
+        Ok(dividendo / divisor)
+    }
 }
 
 fn buscar_elemento(lista: Vec<i8>, elemento: usize) -> Option<i8> {
