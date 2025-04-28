@@ -29,6 +29,17 @@ fn main() {
         Some(elemento) => println!("El elemento se encuentra en la posición: {}", elemento),
         None => println!("El elemento no se encuentra en la lista"),
     }
+
+    let resultado: Result<i32, &str> = Err("no hay dato");
+    
+    if resultado.is_ok() {
+        println!("El resultado es: {}", resultado.unwrap());
+    }
+
+    if resultado.is_err() {
+        println!("hubo un Error: {}", resultado.unwrap_err());
+    }
+
 }
 
 fn buscar_elemento(lista: Vec<i8>, elemento: usize) -> Option<i8> {
