@@ -22,6 +22,21 @@ fn main() {
 
     let resultado: Option<i8> = numero.and_then(dividir_entre_dos);
     println!("El resultado es: {}", resultado.unwrap_or(0));
+
+    let lista_numero: Vec<i8> = vec![1, 2, 3, 4, 5];
+
+    match buscar_elemento(lista_numero, 10) {
+        Some(elemento) => println!("El elemento se encuentra en la posición: {}", elemento),
+        None => println!("El elemento no se encuentra en la lista"),
+    }
+}
+
+fn buscar_elemento(lista: Vec<i8>, elemento: usize) -> Option<i8> {
+    if elemento < lista.len() {
+       Some(lista[elemento])
+    } else {
+        None
+    }      
 }
 
 fn divide(dividendo: f64, divisor: f64) -> Option<f64> {
