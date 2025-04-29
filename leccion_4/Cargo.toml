@@ -2,5 +2,6 @@
 name = "leccion_4"
 version = "0.1.0"
 edition = "2021"
+default-run = "leccion_4"
 
 [dependencies]
