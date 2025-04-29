@@ -1,3 +1,5 @@
+![L4](https://github.com/user-attachments/assets/ddcacb94-56fb-4831-bf2d-214dcc61b648)
+
 # Lección 4 – Gestión de Errores en Rust 🦀
 
 Proyecto del curso de Rust - Lección 4: Trabajando con `Option`, `Result`, manejo de errores y organización de módulos.
@@ -7,7 +9,7 @@ Proyecto del curso de Rust - Lección 4: Trabajando con `Option`, `Result`, mane
 ## 📁 Estructura del proyecto
 
 ```
-.
+~/curso_rust/leccion_4$ tree
 ├── Cargo.lock
 ├── Cargo.toml
 ├── datos.txt
