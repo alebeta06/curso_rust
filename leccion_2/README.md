@@ -22,7 +22,7 @@ La función `tabla_multiplicar(numero: u32)` imprime la tabla de multiplicar del
 **Notas:**  
 - Usa un bucle `for` para recorrer los multiplicadores del 1 al 10.  
 - **Ejemplo de salida para 5:**  
-```plaintext
+```bash
 5 x 1 = 5
 5 x 2 = 10
 ...
@@ -71,7 +71,7 @@ cargo run
 
 ## Salida esperada: 
 
-```
+```bash
 alebeta@LAPTOP-BS7T21SP:~/curso_rust/leccion_2$ cargo run
    Compiling leccion_2 v0.1.0 (/home/alebeta/curso_rust/leccion_2)
 warning: variants `Rojo` and `Amarillo` are never constructed
