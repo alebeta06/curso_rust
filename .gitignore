@@ -1,1 +1,21 @@
-target
+# Carpetas de compilación de Rust
+/target/
+**/target/
+
+# Archivos de lock temporales
+Cargo.lock
+
+# Configuración de editores
+.vscode/
+.idea/
+
+# Archivos de backup y swap
+*~
+*.swp
+*.swo
+*.bak
+.#*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
