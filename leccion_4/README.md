@@ -8,7 +8,7 @@ Proyecto del curso de Rust - Lección 4: Trabajando con `Option`, `Result`, mane
 
 ## 📁 Estructura del proyecto
 
-```
+```bash
 ~/curso_rust/leccion_4$ tree
 ├── Cargo.lock
 ├── Cargo.toml
@@ -67,7 +67,7 @@ Crea una función `dividir_si_puedes(a: i32, b: i32) -> Option<i32>`
 Debe devolver `Some(resultado)` si la división es exacta, y `None` si no lo es o si `b` es 0.
 
 - Respuesta / Implementación:
-```
+```rust
 pub fn dividir_si_puedes(a: i32, b: i32) -> Option<i32> {
     if b == 0 {
         println!("¡No se puede dividir entre cero! 🧙‍♂️");
@@ -95,7 +95,7 @@ Crea una función `calcular(a: i32, b: i32, operacion: char) -> Result<i32, Stri
 Soporta: `'+'`, `'-'`, `'*'`, `'/'`. Error si división entre 0 o operación inválida.
 
 - Respuesta / Implementación:
-```
+```rust
 pub fn calcular(a: i32, b: i32, operacion: char) -> Result<i32, String> {
     match operacion {
         '+' => Ok(a + b),
@@ -124,7 +124,7 @@ pub fn calcular(a: i32, b: i32, operacion: char) -> Result<i32, String> {
 Crear un archivo `biblioteca.rs` con una función pública `buscar_libro(titulo: &str) -> Option<String>` Si el libro está en una lista interna constante privada, devuelve el autor.
 
 - Respuesta / Implementación:
-```
+```rust
 const LIBROS: [(&str, &str); 3] = [
     ("El Señor de los Anillos", "J.R.R. Tolkien"),
     ("Harry Potter", "J.K. Rowling"),
@@ -152,7 +152,7 @@ pub fn buscar_libro(titulo: &str) -> Option<String> {
 Tienes dos funciones `abrir_cofre()` y `leer_mensaje(mensaje)`, usa `.and_then()` para obtener el mensaje solo si todo va bien.
 
 Respuesta / Implementación:
-```
+```rust
 pub fn abrir_cofre() -> Result<String, String> {
     Ok(String::from("Tesoro encontrado!"))
 }
@@ -162,7 +162,7 @@ pub fn leer_mensaje(mensaje: String) -> Result<String, String> {
 }
 ```
 Uso con `.and_then()`
-```
+```rust
 let mensaje_final = abrir_cofre().and_then(leer_mensaje);
 match mensaje_final {
     Ok(mensaje) => println!("{}", mensaje),
@@ -179,13 +179,13 @@ match mensaje_final {
 Crear una función que devuelva una palabra opcional `(Option<String>)` y luego usar `.map()` para contar las letras.
 
 Respuesta / Implementación:
-```
+```rust
 pub fn obtener_palabra() -> Option<String> {
     Some(String::from("magia"))
 }
 ```
 Uso con `.map():`
-```
+```rust
 let palabra = obtener_palabra();
 let letras = palabra.map(|p| p.len());
 match letras {
@@ -198,6 +198,36 @@ match letras {
 - `.map()` transforma el contenido del `Option` si existe (`Some`).
 
 - Si hay palabra, cuenta las letras; si no, da un mensaje.
+
+## Salisa con Consola de `main.rs`
+```bash
+~/curso_rust/leccion_4$ cargo run
+
+Error: No se puede División por cero
+El valor es: 0
+El doble es: 20
+El resultado es: 5
+El elemento no se encuentra en la lista
+hubo un Error: no hay dato
+El resultado es: 5
+El contenido del archivo es: Esto es un contenido de prueba
+```
+## Salisa con Consola de `ejercicios`
+```bash
+~/curso_rust/leccion_4$ cargo run --bin ejercicios
+
+=== Ejecutando solo los ejercicios de repaso ===
+=== Ejercicio 1 ===
+Resultado: 5
+=== Ejercicio 2 ===
+Error: ¡No se puede dividir entre cero!
+=== Ejercicio 3 ===
+Autor encontrado: J.K. Rowling
+=== Ejercicio 4 ===
+El mensaje es: Tesoro encontrado!
+=== Ejercicio 5 ===
+La palabra tiene 5 letras.
+```
 
 ## 🚀 Conclusión
 - Aprendimos a trabajar correctamente con `Option` y `Result`

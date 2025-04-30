@@ -12,7 +12,7 @@ El mago Archibaldo tiene una colección de libros mágicos, runas y hechizos. Qu
 📝 TU MISIÓN:
 Corrige el código usando lo que has aprendido sobre: ownership, borrowing (inmutable y mutable), clone, copy, const, static y lifetime.
 
-```
+```rust
 // HECHIZO CONSTANTE QUE NO CAMBIA
 const HECHIZO_DEL_DIA: &str = "Expecto Patronum";
 
@@ -102,7 +102,7 @@ fn mas_largo(x: &str, y: &str) -> &str {
 ✅ Lifetimes `'a` → Controlan que las referencias sean válidas
 
 ## Salida por Consola
-```
+```bash
 :~/curso_rust/leccion_3$ cargo run
 Expecto Patronum
 Bienvenido a la biblioteca mágica

@@ -103,10 +103,7 @@ El programa debe calcular el resultado basado en dicho operador.
 
 Usamos match para evaluar el operador y ejecutar la operación matemática correspondiente:
 
-```
-rust
-Copiar
-Editar
+```rust
 let operador = '+';
 let num1 = 10.0;
 let num2 = 5.0;
@@ -128,7 +125,7 @@ Si el operador no es válido, se imprime un mensaje de error y se detiene la eje
 
 Al ejecutar `cargo run` obtenemos la siguiente salida:
 
-```
+```bash
    Compiling leccion_1 v0.1.0 (/home/alebeta/curso_rust/leccion_1)
 warning: value assigned to `y` is never read
  --> src/main.rs:9:13
